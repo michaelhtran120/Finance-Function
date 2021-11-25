@@ -21,6 +21,14 @@ $sdg-15: rgb(89, 186, 71);
 $sdg-16: rgb(19, 106, 159);
 $sdg-17: rgb(20, 73, 107);
 
+.bg-dark {
+    background-color: $primary !important;
+}
+h1,
+h3 {
+    color: $secondary;
+}
+
 nav {
     border-bottom: 1px solid $primary;
     background-color: $white;
@@ -54,6 +62,7 @@ nav {
 .hero {
     h1 {
         font-size: 3.7rem;
+        color: $primary;
     }
     img {
         width: 100%;
@@ -62,6 +71,16 @@ nav {
     .col-7 {
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+}
+
+.process {
+    ul {
+        list-style: none;
+    }
+
+    ul li:before {
+        content: "✓ ";
     }
 }
 
