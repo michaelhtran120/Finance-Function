@@ -1,3 +1,103 @@
-.hello {
-    color: red;
+$primary: rgb(13, 57, 95);
+$secondary: rgb(151, 187, 213);
+$tertiary: rgb(97, 125, 150);
+$white: #ffffff;
+$black: rgb(32, 32, 32);
+$sdg-1: rgb(229, 35, 61);
+$sdg-2: rgb(221, 167, 58);
+$sdg-3: rgb(76, 161, 70);
+$sdg-4: rgb(199, 33, 47);
+$sdg-5: rgb(239, 64, 45);
+$sdg-6: rgb(39, 191, 230);
+$sdg-7: rgb(251, 196, 18);
+$sdg-8: rgb(163, 28, 68);
+$sdg-9: rgb(242, 106, 46);
+$sdg-10: rgb(224, 20, 131);
+$sdg-11: rgb(248, 157, 42);
+$sdg-12: rgb(191, 141, 44);
+$sdg-13: rgb(64, 127, 70);
+$sdg-14: rgb(31, 151, 212);
+$sdg-15: rgb(89, 186, 71);
+$sdg-16: rgb(19, 106, 159);
+$sdg-17: rgb(20, 73, 107);
+
+nav {
+    border-bottom: 1px solid $primary;
+    background-color: $white;
+    .navbar-brand {
+        img {
+            width: 50px;
+        }
+    }
+    .navbar-nav {
+        .nav-item:not(:first-child) {
+            margin-left: 5px;
+        }
+        .nav-item {
+            .nav-link {
+                color: $primary !important;
+                padding: 5px 10px !important;
+                letter-spacing: 0;
+                &:hover {
+                    color: $tertiary !important;
+                    transform: translateY(-5px);
+                    transition: all 400ms ease-in-out;
+                }
+            }
+            .active {
+                color: $secondary !important;
+                transform: translateY(-5px);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.hero {
+    h1 {
+        font-size: 3.7rem;
+    }
+    img {
+        width: 100%;
+    }
+    .col-5,
+    .col-7 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero {
+        h1 {
+            font-size: 3.15rem;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    nav {
+        .navbar-nav {
+            .nav-item:not(:first-child) {
+                margin-left: 0px !important;
+            }
+            .nav-item {
+                .nav-link {
+                    padding: 10px 5px 0px 0px !important;
+                }
+            }
+        }
+    }
+
+    .hero {
+        h1 {
+            font-size: 2.75rem;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero {
+        h1 {
+            font-size: 2.25rem;
+        }
+    }
 }

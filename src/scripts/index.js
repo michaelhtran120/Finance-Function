@@ -1,16 +1,13 @@
-import _ from "lodash";
 import "../styles/index.css";
 
-function component() {
-    const element = document.createElement("div");
-    element.innerHTML = _.join(["Hello", "webpack"], " ");
-    element.classList.add("hello");
+const navLinks = Array.from(document.getElementsByClassName("nav-link"));
 
-    return element;
-}
+console.log(navLinks);
 
-document.body.appendChild(component());
-
-alert("TDAY");
-alert("MAHAHAAA");
-alert("work");
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        link.classList.add("active");
+        const oLinks = navLinks.filter((oLink) => oLink !== link);
+        oLinks.forEach((oLink) => oLink.classList.remove("active"));
+    });
+});
