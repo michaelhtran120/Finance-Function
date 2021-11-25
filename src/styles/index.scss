@@ -25,9 +25,7 @@ nav {
     border-bottom: 1px solid $primary;
     background-color: $white;
     .navbar-brand {
-        img {
-            width: 50px;
-        }
+        width: 95px;
     }
     .navbar-nav {
         .nav-item:not(:first-child) {

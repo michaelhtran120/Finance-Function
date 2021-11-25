@@ -3,8 +3,8 @@ nav {
   background-color: #ffffff;
 }
 
-nav .navbar-brand img {
-  width: 50px;
+nav .navbar-brand {
+  width: 95px;
 }
 
 nav .navbar-nav .nav-item:not(:first-child) {
