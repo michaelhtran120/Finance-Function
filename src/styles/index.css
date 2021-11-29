@@ -75,6 +75,14 @@ nav .navbar-nav .nav-item .active {
   content: "✓ ";
 }
 
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #96c6e9;
+}
+
 @media only screen and (max-width: 1200px) {
   .hero h1 {
     font-size: 3.15rem;

@@ -101,6 +101,15 @@ nav {
     }
 }
 
+footer {
+    a {
+        color: $white;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .hero {
         h1 {
