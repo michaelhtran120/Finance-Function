@@ -41,6 +41,8 @@ nav .navbar-nav .nav-item .active {
           transform: translateY(-5px);
   font-weight: bold;
   text-decoration: underline;
+  -webkit-transition: all 270ms ease-in-out;
+  transition: all 270ms ease-in-out;
 }
 
 .hero h1 {
