@@ -3,9 +3,16 @@
   background-color: #0d395f !important;
 }
 
-h1,
-h3 {
-  color: #97bbd5;
+main section:nth-of-type(odd) h2 {
+  color: #0d395f;
+}
+
+main section:nth-of-type(even) h2 {
+  color: #ffffff;
+}
+
+main h3 {
+  color: #96c6e9;
 }
 
 nav {
@@ -13,8 +20,8 @@ nav {
   background-color: #ffffff;
 }
 
-nav .navbar-brand {
-  width: 95px;
+nav .navbar-brand img {
+  width: 45px;
 }
 
 nav .navbar-nav .nav-item:not(:first-child) {
@@ -28,7 +35,7 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 nav .navbar-nav .nav-item .nav-link:hover {
-  color: #617d96 !important;
+  color: #6785a0 !important;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   -webkit-transition: all 400ms ease-in-out;
@@ -36,7 +43,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
 }
 
 nav .navbar-nav .nav-item .active {
-  color: #97bbd5 !important;
+  color: #96c6e9 !important;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   font-weight: bold;

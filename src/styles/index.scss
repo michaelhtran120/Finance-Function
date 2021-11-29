@@ -1,6 +1,6 @@
 $primary: rgb(13, 57, 95);
-$secondary: rgb(151, 187, 213);
-$tertiary: rgb(97, 125, 150);
+$secondary: rgb(150, 198, 233);
+$tertiary: rgb(103, 133, 160);
 $white: #ffffff;
 $black: rgb(32, 32, 32);
 $sdg-1: rgb(229, 35, 61);
@@ -24,16 +24,31 @@ $sdg-17: rgb(20, 73, 107);
 .bg-dark {
     background-color: $primary !important;
 }
-h1,
-h3 {
-    color: $secondary;
+main {
+    section {
+        &:nth-of-type(odd) {
+            h2 {
+                color: $primary;
+            }
+        }
+        &:nth-of-type(even) {
+            h2 {
+                color: $white;
+            }
+        }
+    }
+    h3 {
+        color: $secondary;
+    }
 }
 
 nav {
     border-bottom: 1px solid $primary;
     background-color: $white;
     .navbar-brand {
-        width: 95px;
+        img {
+            width: 45px;
+        }
     }
     .navbar-nav {
         .nav-item:not(:first-child) {
@@ -93,6 +108,7 @@ nav {
         }
     }
 }
+
 @media only screen and (max-width: 992px) {
     nav {
         .navbar-nav {
